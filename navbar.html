@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Dosis', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color:#F6EFE9;
+		}
+
+		.border {
+			border: 2px solid #7B2D8F;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #7B2D8F;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house" style="color: #7b2d8f;"></i> Home</a>
+		<a id="work" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase" style="color: #7b2d8f;"></i> Work </a>
+		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-lightbulb" style="color: #7b2d8f;"></i> Projects </a>
+        <a id="personal" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-user" style="color: #7b2d8f;"></i> Personal </a>
+        <a id="finance" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill" style="color: #7b2d8f;"></i> Finance </a>
+        <a id="productivity" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-gears" style="color: #7b2d8f;"></i> Productivity </a>
+        <a id="leisure" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-star" style="color: #7b2d8f;"></i> Leisure </a>
+        <a id="health" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-kit-medical" style="color: #7b2d8f;"></i> Health </a>
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == "home")
+				window.open("https://www.notion.so/mariebath/H-o-m-e-2a97b538d26247aea2577794ea91bc13", '_parent').focus();
+            else if (id == "work")
+				window.open("https://www.notion.so/mariebath/Work-a5f6fb4d6353483d8a47d48241787e10?pvs=4", '_parent' ).focus();
+            else if (id == "projects")
+				window.open("https://www.notion.so/mariebath/Projects-7de4ff09c5cd4f578de89172f1b295e5?pvs=4", '_parent').focus();
+            else if (id == "personal")
+				window.open("https://www.notion.so/mariebath/Personnal-1e57784130184a8f9912b48c5984a2ad?pvs=4", '_parent').focus();
+            else if (id == "finance")
+				window.open("https://www.notion.so/mariebath/Finance-35d2560dd3834d49b965e160f183280e?pvs=4", '_parent').focus();
+            else if (id == "productivity")
+				window.open("https://www.notion.so/mariebath/Productivity-21ae95618cc342cb9765e2b1c926a9e1?pvs=4", '_parent').focus();
+            else if (id == "leisure")
+				window.open("https://www.notion.so/mariebath/Leisure-b9706f6f37834e838efa2ba0ca5ebee2?pvs=4", '_parent').focus();
+            else if (id == "health")
+				window.open("https://www.notion.so/mariebath/Leisure-b9706f6f37834e838efa2ba0ca5ebee2?pvs=4", '_parent').focus();
+
+
+		}
+	</script>
+
+
+</body>
+
+</html>
